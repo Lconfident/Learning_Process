@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //自定义对象
+    var user = {
+        name: "Tom",
+        age: "10",
+        gender: "male",
+        // eat:function(){
+        //     alert("用膳");
+        // }
+        eat() {
+            alert("用膳~");
+        }
+    }
+    console.log(user.name);
+    user.eat();
+
+    //定义JSON
+    var jsonStr = '{"name":"Tom","age":18,"addr":["北京","上海","南京"]}';
+    //JSON转为JS对象
+    var jsObject = JSON.parse(jsonStr);
+    console.log(jsObject.name);
+
+
+    //JS对象转为JSON字符串
+    var jsonString = JSON.stringify(jsObject);
+    alert(jsonString);
+
+</script>
+
+</html>
