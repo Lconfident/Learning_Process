@@ -247,7 +247,7 @@
  :ref/linked-references-collapsed-threshold 50
 
  ;; Favorites to list on the left sidebar
- :favorites []
+ :favorites ["北北" "起步"]
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5
@@ -344,9 +344,9 @@
  ;;     ;use triple underscore `___` for slash `/` in page title
  ;;     ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :feature/enable-journals? false
+ :feature/enable-journals? true
  :feature/enable-whiteboards? false
- :default-home {:page "起步"}
+ :default-home {:page "北北"}
  :editor/logical-outdenting? true
  :feature/enable-flashcards? false
  :publishing/all-pages-public? false
