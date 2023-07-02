@@ -65,7 +65,7 @@ public class LoginServlet extends HttpServlet {
 
                 //跳转页面
                 if (100 == user.getEmp_id() && "root".equals(user.getPassword())) {
-                    response.sendRedirect(request.getContextPath() + "/rootHome.jsp");
+                    response.sendRedirect(request.getContextPath() + "/RootShowServlet");
                 } else {
                     response.sendRedirect(request.getContextPath() + "/UserShowServlet");
                 }

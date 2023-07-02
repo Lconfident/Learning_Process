@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class DepDao {
+    // 得到各部门的基本信息
     public Dep getDep(int id) {
         Connection conn = null;
         Statement stmt = null;
@@ -41,5 +42,30 @@ public class DepDao {
             JDBCUtils.release(rs, stmt, conn);
         }
         return null;
+    }
+
+    // 得到各部门的人数
+    public int getDepNumber(int id){
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+        try{
+            conn = JDBCUtils.getConnection();
+            stmt = conn.createStatement();
+            String sql = "select count(*) as 'headcount'\n" +
+                    "from employee\n" +
+                    "group by dep_id\n" +
+                    "having dep_id="+id;
+            rs= stmt.executeQuery(sql);
+            if(rs!=null){
+                while(rs.next()) {
+                    return rs.getInt("headcount");
+                }
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.release(rs,stmt,conn);
+        }return 0;
     }
 }

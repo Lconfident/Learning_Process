@@ -18,6 +18,7 @@
         <option value="jsf" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15429688" />
@@ -150,6 +152,10 @@
       <workItem from="1688003942479" duration="46623000" />
       <workItem from="1688091483272" duration="19884000" />
       <workItem from="1688173841899" duration="5115000" />
+      <workItem from="1688181382223" duration="619000" />
+      <workItem from="1688199241482" duration="10949000" />
+      <workItem from="1688266591329" duration="1120000" />
+      <workItem from="1688286329012" duration="2241000" />
     </task>
     <servers />
   </component>

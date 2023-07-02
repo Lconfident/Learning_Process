@@ -20,6 +20,7 @@
         <th>账号</th>
         <th>邮箱</th>
         <th>管理</th>
+        <th>查看</th>
     </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
             <td>${staff.emp_id}</td>
             <td>${staff.email}</td>
             <td>${staff.man_name}</td>
+            <td><a href="${pageContext.request.contextPath}/InfoServlet?id=${staff.emp_id}&name=${staff.emp_name}">详细信息</a></td>
         </tr>
     </c:forEach>
     </tbody>

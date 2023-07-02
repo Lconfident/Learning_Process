@@ -12,7 +12,7 @@
     <title>岗位管理</title>
 </head>
 <body>
-    <form action="/hrms/DepManageServlet" method="post">
+    <form action="/hrms/\" method="post">
         请输入账号：<input type="text" name="emp_id">
         <br/>
         <label for="dep">请选择部门：</label>

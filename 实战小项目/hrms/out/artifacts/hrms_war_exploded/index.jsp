@@ -1,41 +1,52 @@
-<%@ page import="entity.User" %><%--
+<%@ page import="entity.User" %>
+<%--
   Created by IntelliJ IDEA.
   User: www
   Date: 2023/6/18
   Time: 11:19
-  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <title>员工管理系统</title>
 </head>
-<body style="text-align: center;">
+<body>
 
-<h2>
-    <center>Login</center>
-</h2>
+<div class="login-container">
+    <!-- 图片 -->
+    <div class="img-container">
+        <img src="./img/login.jpg" alt="login.jpg">
+    </div>
 
-<form method="post" action="<%=request.getContextPath() %>/LoginServlet">
-    <%-- “用户名”字段 --%>
-    <%--  如果请求参数中包含名为 “emp_id” 的参数，则将其值填充到 “emp_id” 表单字段中
-   否则，如果 cookie 中包含名为 “emp_id” 的 cookie
-   则将该 cookie 的值填充到 “emp_id” 表单字段中
-   否则，将空字符串填充到 “emp_id” 表单字段中--%>
-    <label for="emp_id">账号:</label>
-    <input type="text" name="id" id="id" placeholder="请输入账号" required="required"/>
-    <br/>
-    <%-- “密码”字段 --%>
-    <label for="password">密码:</label>
-    <input type="password" name="password" id="password" placeholder="请输入密码" required="required"/>
-    <br/>
-    <%-- 显示错误消息 --%>
-    <c:if test="${not empty requestScope.error}">
-        <p style="color: red;align-content: center">${error}</p>
-    </c:if>
-    <input type="submit" value="登录"/>&nbsp;&nbsp;&nbsp;
-    <input type="reset" value="重置">
-</form>
+    <!-- 登录表单 -->
+    <form method="post"
+          action="<%=request.getContextPath() %>/LoginServlet" class="form-container">
+        <span class="active login-welcome">欢迎登录</span>
+        <br/>
+
+        <span class="login-text">账号</span><br/>
+        <input type="text" name="id" class="text" placeholder="请输入您的账号" required/>
+        <br/>
+
+        <span class="login-text">密码</span><br/>
+        <input type="password" name="password" class="text" placeholder="请输入您的密码" required/>
+
+        <br/>
+
+        <!-- ${error} -->
+        <c:if test="${not empty requestScope.error}">
+            <p class="error">${error}</p>
+        </c:if>
+
+        <br/>
+
+        <div class="button">
+            <input type="submit" value="登录" class="login"/>
+            <input type="reset" value="重置" class="login"/>
+        </div>
+    </form>
+</div>
 </body>
 </html>

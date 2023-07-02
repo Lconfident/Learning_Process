@@ -33,8 +33,17 @@
             <input type="submit" name="搜索"><input type="reset" name="取消">
         </form>
         <hr/>
+
+        <p>10号部门:${requestScope.d10_number}</p>
+        <p>11号部门:${requestScope.d11_number}</p>
+        <p>12号部门:${requestScope.d12_number}</p>
+        <p>13号部门:${requestScope.d13_number}</p>
+        <p>14号部门:${requestScope.d14_number}</p>
+        <p>15号部门:${requestScope.d15_number}</p>
+
+        <hr/>
         <a href="${pageContext.request.contextPath}/DepShowServlet">部门管理</a><br/>
-        <a href="staffManage.jsp">人员管理</a><br/>
+        <a href="staffManage.jsp">人事管理</a><br/>
         <a href="depManage.jsp">岗位管理</a><br/>
         <a href="userManage.jsp">账号管理</a><br/>
         <a href="${pageContext.request.contextPath}/LogoutServlet">注销</a>
