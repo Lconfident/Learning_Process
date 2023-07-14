@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博雅互动</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: "Microsoft YaHei", "SimSun";
+            height: 8888px;
+        }
+
+        .header {
+            height: 58px;
+            background-color: #191d3a;
+        }
+
+        /* 版心 */
+        .inner_c {
+            width: 1000px;
+            margin: 0 auto;
+            /* 使得导航条，内容区域等部分的版心在父亲里居中*/
+        }
+
+        /* logo */
+        .header .logo {
+            float: left;
+            margin-right: 40px;
+        }
+
+        /* 导航条 */
+        .header .nav {
+            float: left;
+        }
+
+        .header .nav ul {
+            list-style: none;
+            /*去掉列表前面的原点*/
+        }
+
+        .header .nav ul li {
+            float: left;
+            width: 100px;
+            line-height: 58px;
+            /* 让行高等于div的高度，保证里面的文字垂直居中 */
+            border-left: 1px solid #252947;
+            /* 是每个li之间都有间隔线 */
+        }
+
+        .header .nav ul li.last {
+            border-right: 1px solid #252947;
+            /* 最后一个li的右边加间隔线 */
+        }
+
+        .header .nav ul li a {
+            display: block;
+            /* 将超链接转换为块，可以保证其霸占父亲的整行 */
+            height: 58px;
+            text-decoration: none;
+            /* 去掉链接的下划线 */
+            color: #818496;
+            text-align: center;
+            /* div内部文本居中 */
+        }
+
+        .header .nav ul li a.current {
+            color: white;
+            background: #252947;
+        }
+
+        .header .nav ul li a:hover {
+            color: white;
+            background: #252947;
+        }
+
+        /* 加入我们 */
+        .header .jrwm_box {
+            float: left;
+            height: 58px;
+            width: 100px;
+            padding-left: 48px;
+            padding-top: 12px;
+        }
+
+        /* 放背景图的div */
+        .header .jrwm_box .jrwm {
+            height: 34px;
+            background-color: #38b774;
+            border: 1px solid #3aca7a;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .header .jrwm_box .jrwm a {
+            display: block;
+            line-height: 34px;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* 清除浮动的影响 */
+        div.cl {
+            clear: both;
+        }
+
+        /* banner横幅 */
+        div.banner {
+            height: 465px;
+            background: url("http://www.boyaa.com/pic/banner20230524.jpg") no-repeat center top;
+        }
+
+        /* 内容区 */
+        .content{
+            padding-top:50px;
+        }
+        .content .product{
+            height:229px;
+            border-bottom: 1px solid #dbe1e7;
+        }
+        .content .product ul{
+            list-style: none;
+        }
+        .content .product ul li{
+            float:left;
+            width: 218px;
+            margin-right: 43px;
+        }
+        .content .product ul li.last{
+            margin-right: 0;
+            width: 217px;
+        }
+        .content .product ul li img{
+            width: 218px;
+            height: 130px;
+        }
+        .content .product ul li.last img{
+            width:217px;
+        }
+        .content .product ul li h3{
+            text-align: center;
+            line-height: 38px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .content .product ul li p.djbf{
+            text-align: center;
+            line-height: 16px;
+        }
+        .content .product ul li p.djbf a{
+            font-size: 12px;
+            color: #38b774;
+            text-decoration: none;
+            background: url(http://www.boyaa.com/images/arrow.png) no-repeat right center;
+            padding-right: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <!-- 通用版心 作为通栏的版心，一般把这个版心称为class=inner_c，c指的是center-->
+        <div class="inner_c">
+
+            <!-- logo -->
+            <div class="logo">
+                <img src="http://www.boyaa.com/images/logo.png" alt="logo">
+            </div>
+
+            <!-- 导航栏 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="current">首页</a></li>
+                    <li><a href="#">博雅游戏</a></li>
+                    <li><a href="#">博雅新闻</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">客服中心</a></li>
+                    <li class="last"><a href="#">商家加盟</a></li>
+                </ul>
+            </div>
+
+            <!-- 加入我们 -->
+            <div class="jrwm_box">
+                <div class="jrwm">
+                    <a href="http://www.jd.com" target="_blank">加入我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 在导航条和banner之间隔一堵墙 -->
+    <div class="cl"></div>
+
+    <div class="banner"></div>
+
+    <!-- 内容区域 -->
+    <div class="content inner_c">
+        <div class="product">
+            <ul>
+                <li>
+                    <p><img src="http://www.boyaa.com/pic/bygy.jpg" alt=""></p>
+                    <h3>BPT宣传片</h3>
+                    <p class="djbf">
+                        <a href="">点击播放</a>
+                    </p>
+                </li>
+                <li>
+                    <p><img src="http://www.boyaa.com/pic/xq_gys.jpg" alt=""></p>
+                    <h3>“博雅杯”象棋公益赛回顾</h3>
+                    <p class="djbf">
+                        <a href="">点击播放</a>
+                    </p>
+                </li>
+                <li>
+                    <p><img src="http://www.boyaa.com/pic/ddz_gys.jpg" alt=""></p>
+                    <h3>“博雅杯”斗地主公益赛回顾</h3>
+                    <p class="djbf">
+                        <a href="">点击播放</a>
+                    </p>
+
+                </li>
+                <li class="last">
+                    <p><img src="http://www.boyaa.com/images/byamaj.jpg" alt=""></p>
+                    <h3>麻将全集</h3>
+                    <p class="djbf">
+                        <a href="">点击播放</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

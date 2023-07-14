@@ -1,0 +1,120 @@
+div{
+    /* felx布局 ：垂直水平居中 */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 文字只显示一行，超过显示省略号 */
+p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 文字显示两行，超出后显示省略号 */
+p{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div{
+    transform: translate(-50%, -50%) scale(0.5);
+    background-size: 100% 100%;
+}
+
+/* 鼠标悬浮，显示文字 */
+.tip-img{
+    display: inline-block;
+    background: url('#') no-repeat left center;
+    height:32px;
+    position: relative;
+    width:12px;
+}
+
+.tip-img .prompt-box{
+    background-color: #ccc;
+    width:120px;
+    position: absolute;
+    left:14px;
+    top:5px;
+    display:none;
+}
+
+.tip-img:hover .prompt-box{
+display: inline-block;
+}
+/* 鼠标移动上去的元素和悬浮出来的元素一定具有嵌套关系，否则使用hover没有效果
+而且被嵌套的内部元素一定脱离标准流，否则会影响到标准流中元素的布局位置 */
+
+/* css扩大点击热区 */
+.button{
+    position: relative;
+}
+
+.button::before{
+    content:'';
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    bottom: -10px;
+    left: -10px;
+}
+/* 注意，button里面不要写overflow:hidden属性，否则扩大热区无效 */
+
+/* 上下滚动，不显示滚动条 */
+.sku.list{
+    margin-left: 25px;
+    display:flex;
+    height: 617px;
+    overflow: hidden;
+    overflow-y:scroll;
+
+    /* 去掉滚动条 */
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+/* 设置页面的宽高，撑满屏幕 */
+.app{
+    width:100vw;
+    min-height: 100vh;
+}
+
+/* 隐藏盒子 */
+div{
+    /* 隐藏盒子的超出部分 */
+    overflow: hidden;
+}
+
+div{
+    /* 隐藏盒子，而且不占位置（用的最多） */
+    display: none;
+}
+
+div{
+    visibility: hidden;
+    /* 隐藏盒子，占位置 */
+    visibility: visible;
+    /* 让盒子重新显示 */
+}
+
+/* 设置盒子的半透明 */
+div{
+    opacity:0.4;
+    /* 优点：方便；缺点：盒子里的内容也会半透明 */
+
+    background: rgba(1,1,1,0.3);
+    /* a是指透明度alpha */
+}
+
+/* 给标签的形状设置为圆角矩形 */
+div{
+    border-radius: 50%;
+    border-radius: 10px 0 0 10px;
+}
+

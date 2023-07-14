@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基础语法</title>
+</head>
+
+<body>
+</body>
+<script>
+    // js注释
+    /* js注释 */
+
+    // 输出语句
+    // 弹出警告框
+    window.alert("Hello JavaScript!");
+    // 写在html页面中
+    document.write("Hello,write!");
+    // 控制台输出
+    console.log("Hello,console!");
+
+    var a = "张三";
+
+    alert(a);
+
+    // 特点1： var 的作用域比较大，全局变量
+    // 特点2： 可以重复定义
+    // 针对这两个特点，ES6新增了 let 关键字定义变量，所声明的变量，只在特定代码块有效，且不允许重复声明
+    // const 关键字，用来声明一个只读的常量，一旦声明，常量的值就不能改变
+
+    {
+        let x = 10;
+        alert(x);
+    }
+
+    console.log(typeof 3);
+    console.log(typeof 3.14);
+    console.log(typeof "A");
+    console.log(typeof "String");
+    console.log(typeof true);
+    console.log(typeof null);
+    var a;
+    console, log(typeof a);
+
+    // == 会进行类型转换， === 不会进行类型转换
+
+    // 类型转换
+    // 类型转换数字：字面值转为数字；否则转为NaN
+    // 其他类型转为boolean：
+    // Number：0和NaN为false，其他为true
+    // String：空字符串为false，其他为true
+    // Null和undefined均为false
+
+    // 流程控制语句
+
+    // 函数
+    // 函数定义
+    function add(a, b) {
+        return a + b;
+    }
+    // 函数调用
+    var result = add(10,30);
+    console.log(result)
+</script>
+
+</html>

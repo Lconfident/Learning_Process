@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <style type="text/css">
+        body{
+            margin:0;
+            padding: 0;
+            background-color: #eee;
+        }
+        .content{
+            width:800px;
+            height: 320px;
+            padding-left: 20px;
+            margin:80px auto;
+        }
+        .item{
+            width:230px;
+            height: 300px;
+            text-align: center;
+            margin-left: 20px;
+            background-color: #fff;
+            float:left;
+            position:relative;
+            top:0;
+            overflow:hidden;
+            /* 让溢出的内容隐藏起来，意思时让下方的橙色方块先躲起来 */
+            transition:all .5s ease;
+            /* 从最初到鼠标悬停时的过渡 */
+        }
+
+        .item img{
+            margin-top: 30px;
+        }
+
+        .item .desc {
+            position:absolute;
+            left:0;
+            bottom:-80px;
+            width: 100%;
+            height: 80px;
+            background-color: #ff6700;
+            transition: all .5s ease;
+        }
+        /* 鼠标悬停时，让item整体往上移动5px，且加一点阴影 */
+        .item:hover{
+            top:-5px;
+            box-shadow: 0 0 15px #aaa;
+        }
+        /* 鼠标悬停时，让下方的橙色方块现身 */
+        .item:hover .desc{
+            bottom:0;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202305291422_e96776c7e1e35cebb454457c3344d3cd.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+        </div>
+        <div class="item">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202305241112_ecb14876904f09f3cbc605350a02eff0.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+            <span class="desc"></span>
+        </div>
+        <div class="item">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a6cec580260ceb20ae6a885c2c65c611.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+            <span class="desc"></span>
+        </div>
+    </div>
+</body>
+</html>

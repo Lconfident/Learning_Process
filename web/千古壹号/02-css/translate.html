@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          /* 这里使用translate实现脱标盒子在父亲中居中 */
+        .content {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+            position:relative;
+            left:0;
+        }
+
+        .content .abs {
+            width: 100px;
+            height: 100px;
+            background-color: #d87575;
+            position: absolute;
+            left: 50%;
+            top:10px;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- 脱标盒子在父亲中居中 -->
+    <div class="content">
+        <div class="abs"></div>
+    </div>
+</body>
+</html>
