@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件修饰符</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+<!-- Vue事件修饰符：
+        1.prevent：阻止默认事件
+        2.once：事件只触发一次
+        3.stop：组织事件冒泡
+        4.-->
+
+
+    <!-- 准备好一个容器 -->
+    <div id="root">
+    <h2>欢迎来到{{name}}学习</h2>
+    <a href="http:atguigu.com" @click.prevent="showInfo" >点我提示信息</a>
+    </div>
+
+    <script type="text/javascript">
+        new Vue({
+            el:'#root',
+            data:{
+                name:'尚硅谷'
+            },
+            methods:{
+                showInfo(e){
+                    alert('同学，你好')
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

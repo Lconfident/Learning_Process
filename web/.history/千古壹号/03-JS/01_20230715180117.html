@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 弹出输入框
+    var a = prompt("Hello,boy!")
+    console.log(a);
+
+    // 模板字符串
+    var a = 10;
+    var b = 2;
+    console.log(`a+b = ${a + b} not = ${a * b}`);
+
+    // 浮点数计算导入decimal.js
+    // 固定的选择，则选择过少，使用if；否则使用switch
+
+    // 对象
+    const obj = new Object();
+    obj.sayName = function () {
+        console.log('qianguyihao');
+    };
+
+    // 没加括号，就是获取方法
+    console.log(obj.sayName);
+    console.log('-----------');
+    // 加了括号，就是调用方法。即：执行函数内容，并执行函数体的内容
+    console.log(obj.sayName());
+</script>
+
+</html>
