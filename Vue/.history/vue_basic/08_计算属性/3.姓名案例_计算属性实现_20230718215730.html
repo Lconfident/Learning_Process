@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姓名案例_计算属性实现</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        姓：<input type="text" v-model="firstName"><br>
+        名：<input type="text" v-model="lastName"><br>
+        全名：<span>{{fullName}}</span>
+
+
+    </div>
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#root',
+            data: {
+                firstName: '张',
+                lastName: '三'
+            },
+            // 计算属性：将属性计算得到全新的属性
+            computed: {
+                fullName: {
+                    // get有什么作用？当有人读取fullName时，get就会被调用，且返回值就是作为fullName的值
+                    // get什么时候调用？1.初次读取fullName时 2.所依赖的数据发生变化时
+                    // 拥有缓存机制
+                    get() {
+                        // console.log(this);
+                        // 此处的this是vm
+                        return this.firstName + "_" + this.lastName
+                    },
+                    // set有什么作用？当fullName被修改时
+                    set(value){
+                        const arr = value.split('-'),
+                        this
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

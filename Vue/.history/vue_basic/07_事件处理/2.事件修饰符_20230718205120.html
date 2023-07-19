@@ -9,18 +9,16 @@
     <script type="text/javascript" src="../../js/vue.js"></script>
 
     <style>
-        * {
-            margin-top: 10px;
+        *{
+            margin-top:10px;
         }
-
-        div {
-            height: 30px;
+        div{
+            height:30px;
             background: skyblue;
         }
-
-        a {
-            height: 15px;
-            background: #ccc;
+        a{
+            height:15px;
+            background:#ccc;
         }
     </style>
 </head>
@@ -39,15 +37,13 @@
 
     <!-- 准备好一个容器 -->
     <div id="root">
-        <!-- 阻止默认事件 -->
+        <!-- 组织默认事件 -->
         <h2>欢迎来到{{name}}学习</h2>
         <a href="http:atguigu.com" @click.prevent="showInfo">点我提示信息</a>
 
         <!-- 阻止事件冒泡 -->
         <div class="demo1" @click="showInfo">
-            <a href="http://atguigu.com" @click.stop="showInfo">点我提示信息</a>
-            <!-- 修饰符可以连续写 -->
-            <!-- <a href="http://atguigu.com" @click.stop.prevent="showInfo">点我提示信息</a> -->
+            <a href="http://atguigu.com" @click.prevent.stop="showInfo">点我提示信息</a>
         </div>
     </div>
 
