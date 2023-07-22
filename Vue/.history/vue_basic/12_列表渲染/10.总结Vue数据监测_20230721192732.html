@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        <h1>学生信息</h1>
+
+
+        <h3>姓名：{{}}}</h3>
+    </div>
+
+    <script type="text/javascript">
+        const vm = new Vue({
+            el:'#root',
+            data:{
+                student:{
+                    name:'tom',
+                    age:18,
+                    hobby:['抽烟','喝酒','烫头'],
+                    friends:[
+                        {name:'jerry',age:35}
+                        {name:'tony',age:34}
+                    ]
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气案例-监视简写</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        <h2>今天天气很{{info}}</h2>
+        <button @click="isHot = !isHot">切换天气</button>
+
+    </div>
+
+    <script type="text/javascript">
+        const vm = new Vue({
+            el: '#root',
+            data: {
+                isHot: true,
+            },
+            computed: {
+                info() {
+                    return this.isHot ? '炎热' : '凉爽'
+                }
+            },
+            watch: {
+                //正常写法
+                /* isHot: {
+                    immediate: true, //初始化时让 handler 调用一下
+                    deep: true, //深度监视
+                    // handler声明时候调用？ 当isHot发生改变时。
+                    handler(newValue, oldValue) {
+                        console.log('isHot被修改了', newValue, oldValue);
+                    } */
+
+                //简写
+                isHot: {
+
+                }
+            }
+        })
+
+
+        // 调用API
+        /*  vm.$watch('isHot', {
+             immediate: true, //初始化时让 handler 调用一下
+             // handler声明时候调用？ 当isHot发生改变时。
+             handler(newValue, oldValue) {
+                 console.log('isHot被修改了', newValue, oldValue);
+             }
+         }) */
+    </script>
+</body>
+
+</html>

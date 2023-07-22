@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        <h1>学校信息</h1>
+        <h2>学校名称：{{name}}</h2>
+        <h2>学校地点：{{address}}</h2>
+        <hr>
+        <h1>学生信息</h1>
+        <button @click="add">添加性别属性</button>
+        <h2>姓名：{{student.name}}</h2>
+        <h2>性别：{{student.sex}}</h2>
+        <h2>年龄：真实{{student.age.rAge}}，对外：{{student.age.sAge}}</h2>
+        <h2>朋友们</h2>
+        <ul>
+            <li v-for="(f,index) in student.fridends" :key="index">
+                {{f.name}} -- {{f.age}}
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        const vm = new Vue({
+            el: '#root',
+            data: {
+                name: '尚硅谷',
+                address: '北京',
+                student: {
+                    name: 'Tom',
+                    age: {
+                        rAge: 22,
+                        sAge: 23,
+                    },
+                    fridends: [
+                        { name: 'jerry', age: 8 },
+                        { name: 'tony', age: 24 },
+                    ]
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

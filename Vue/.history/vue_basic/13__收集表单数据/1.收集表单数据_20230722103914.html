@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收集表单数据</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        <form>
+            账号：<input type="text" v-model="account"><br><br>
+            密码：<input type="password" v-model="password"><br><br>
+            性别：
+            男<input type="radio" name="gender" v-model="gender" value="male">
+            女<input type="radio" name="gender" v-model="gender" value="female"><br><br>
+            爱好：
+            学习<input type="checkbox" v-model="hobby" value="study">
+            打游戏<input type="checkbox" v-model="hobby" value="">
+            吃饭<input type="checkbox"><br><br>
+            所属校区：
+            <select>
+                <option value="">请选择校区</option>
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="wuhan">武汉</option>
+                <option value="shenzhen">深圳</option>
+            </select><br><br>
+            其他信息：
+            <textarea cols="10" rows="2"></textarea><br><br>
+            <input type="checkbox">阅读并接受<a href="http://atguigu.com">《用户协议》</a><br><br>
+            <!-- <input type="submit" value="提交"> -->
+            <button>提交</button>
+        </form>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    new Vue({
+        el:'#root',
+        data:{
+            account:'',
+            password:'',
+            gender:'',
+            hobby:'',
+        }
+    })
+</script>
+
+</html>

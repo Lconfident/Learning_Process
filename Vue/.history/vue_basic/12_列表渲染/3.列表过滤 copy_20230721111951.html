@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表过滤</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        <!-- 遍历数组 -->
+        <h2>人员列表(遍历数组)</h2>
+        <ul>
+            <li v-for="person of persons" :key="person.id">
+                {{person.name}}-{{person.age}}
+                <!-- {{person}} -->
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#root',
+            data: {
+                persons: [
+                    { id: '001', name: '马冬梅', age: 18 },
+                    { id: '002', name: '周冬雨', age: 19 },
+                    { id: '003', name: '周杰伦', age: 19 },
+
+                    { id: '003', name: '王五', age: 20 }
+                ],
+
+            }
+        })
+    </script>
+</body>
+
+</html>

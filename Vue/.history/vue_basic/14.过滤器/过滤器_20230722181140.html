@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../../js/vue.js"></script>
+    <script type="text/javascript" src="../../js/dayjs.min.js"></script>
+</head>
+
+<body>
+    <!-- 准备好一个容器 -->
+    <div id="root">
+        <div id="root">
+            <h3>时间戳：{{time}}</h3>
+            <!-- 计算属性实现 -->
+            <h3>格式化时间戳：{{fmtTime}}</h3>
+            <!-- methods实现 -->
+
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    new Vue({
+        el:'#root',
+        data:{
+            time: 1690019981536 //时间戳
+        },
+        computed:{
+            fmtTime(){
+                return dayjs(this.time).format('YYYY年MM月DD日 HH:mm:ss')
+            }
+        },
+        methods:{
+            return  dayjs(this.time).format('YYYY-MM-DD HH:mm:ss')
+        }
+    })
+</script>
+
+</html>
