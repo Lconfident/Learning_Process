@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.48">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>8.0.31</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="atguigudb"/>
+    <schema id="3" parent="1" name="dbtest1"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="jdbc"/>
+    <schema id="6" parent="1" name="lesson_mybatis"/>
+    <schema id="7" parent="1" name="mybatis-example"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="performance_schema"/>
+    <schema id="10" parent="1" name="staffdb"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="test01_office"/>
+    <schema id="13" parent="1" name="test02_market"/>
+    <schema id="14" parent="1" name="test03_company"/>
+  </database-model>
+</dataSource>
