@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!--
+      mapper为映射的根节点，用来管理DAO接口
+      namespace指定DAO接口的完整类名，表示mapper配置文件管理哪个DAO接口(包.接口名)
+      mybatis会依据这个接口动态创建一个实现类去实现这个接口，而这个实现类是一个Mapper对象
+   -->
+
+
+<mapper namespace="com.atguigu.mapper.CustomerMapper">
+    <!--
+          id = "接口中的方法名"
+          parameterType = "接口中传入方法的参数类型"
+          resultType = "返回实体类对象：包.类名"  处理结果集 自动封装
+          注意:sql语句后不要出现";"号
+              查询：select标签
+              增加：insert标签
+              修改：update标签
+              删除：delete标签
+      -->
+
+    <!-- 默认情况下，resultMap会自动映射 单层 的result标签【列名和属性名相同 |　开启驼峰式自动映射　a_bc -> aBc】
+         嵌套多层 association | collection 不会自动映射result标签的属性和列 autoMappingBehavior 为 FULL
+    -->
+
+
+    <resultMap id="customerMap" type="customer">
+        <id column="customer_id" property="customerId"/>
+        <!-- <result column="customer_name" property="customerName"/> -->
+
+        <!-- <association property="" javaType=""/> 对一对象属性赋值 -->
+        <!-- 集合属性赋值
+             property 集合属性名
+             ofType 集合的泛型类型
+         -->
+        <collection property="orderList" ofType="order">
+            <id column="order_id" property="orderId"/>
+            <!-- <result column="order_name" property="orderName"/> -->
+            <!-- <result column="customer_id" property="customerId"/> -->
+        </collection>
+    </resultMap>
+    <!-- List<Customer> queryList(); -->
+    <select id="queryList" resultMap="customerMap">
+        select * from t_customer tur join t_order tor
+            on tor.customer_id = tur.customer_id
+    </select>
+
+</mapper>

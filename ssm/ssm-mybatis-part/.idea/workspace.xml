@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ab2b393-fcac-42b3-acf8-ace5b1a0e8e3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="db" />
+        <option value="mybatis-config" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="XxxMapper" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XAJa6WCPPKJlAd4hJJjobzuQ5o" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "E:/code/ssm-mybatis-part/mybatis-other-extend-07/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\ssm-mybatis-part\mybatis-other-extend-07\src\main\resources" />
+      <recent name="E:\code\ssm-mybatis-part\mybatis-base-output-03\src\main\resources" />
+      <recent name="E:\code\ssm-mybatis-part\mybatis-base-output-03\src\main\java\com\atguigu" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\ssm-mybatis-part\mybatis-other-extend-07\src\main\resources\com\atguigu\mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.atguigu.test" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.atguigu.mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.mapper" />
+      <recent name="com.atguigu.pojo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EmployeeMapperTest.query">
+    <configuration name="All in mybatis-base-crud-04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-base-crud-04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerMapperTest.queryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-high-multitable-05" />
+      <option name="PACKAGE_NAME" value="com.atguigu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapper.CustomerMapperTest" />
+      <option name="METHOD_NAME" value="queryList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeMapperTest.query" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-high-dynsql-06" />
+      <option name="PACKAGE_NAME" value="com.atguigu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapper.EmployeeMapperTest" />
+      <option name="METHOD_NAME" value="query" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderMapperTest.queryOrderById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-high-multitable-05" />
+      <option name="PACKAGE_NAME" value="com.atguigu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapper.OrderMapperTest" />
+      <option name="METHOD_NAME" value="queryOrderById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-base-crud-04" />
+      <option name="PACKAGE_NAME" value="com.atguigu.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserMapperTest.insert" />
+        <item itemvalue="JUnit.OrderMapperTest.queryOrderById" />
+        <item itemvalue="JUnit.EmployeeMapperTest.query" />
+        <item itemvalue="JUnit.CustomerMapperTest.queryList" />
+        <item itemvalue="JUnit.All in mybatis-base-crud-04" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ab2b393-fcac-42b3-acf8-ace5b1a0e8e3" name="Changes" comment="" />
+      <created>1698066011721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698066011721</updated>
+      <workItem from="1698066012864" duration="4808000" />
+      <workItem from="1698123132482" duration="16000" />
+      <workItem from="1698123156975" duration="280000" />
+      <workItem from="1698136291941" duration="681000" />
+      <workItem from="1698136982316" duration="398000" />
+      <workItem from="1698381108921" duration="5656000" />
+      <workItem from="1698490185381" duration="2869000" />
+      <workItem from="1698574453881" duration="1832000" />
+      <workItem from="1698681285312" duration="2296000" />
+      <workItem from="1698716996794" duration="25000" />
+      <workItem from="1698801777671" duration="1307000" />
+      <workItem from="1698822492517" duration="1880000" />
+      <workItem from="1699264037783" duration="1071000" />
+      <workItem from="1699320439165" duration="3898000" />
+      <workItem from="1699347749498" duration="6400000" />
+      <workItem from="1699354429981" duration="1644000" />
+      <workItem from="1699404152102" duration="7371000" />
+      <workItem from="1699455945430" duration="3296000" />
+      <workItem from="1699520234445" duration="4776000" />
+      <workItem from="1699578901275" duration="4052000" />
+      <workItem from="1699669574541" duration="2740000" />
+      <workItem from="1699797965972" duration="362000" />
+      <workItem from="1699860529956" duration="181000" />
+      <workItem from="1699860725189" duration="291000" />
+      <workItem from="1699861028278" duration="4974000" />
+      <workItem from="1699866020991" duration="756000" />
+      <workItem from="1699934154113" duration="186000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
