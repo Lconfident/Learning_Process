@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var txt = "this is a book";
+
+        var length = txt.length;
+        console.log(length);
+
+        // 查找字符串中的字符串
+        var fistIndex = txt.indexOf('is');
+        console.log(fistIndex);
+
+        var lastIndex = txt.lastIndexOf('book');
+        console.log(lastIndex);
+
+        // 检索字符串中的字符串
+        var serchIndex = txt.search('is a');
+        console.log(serchIndex);
+
+        str = "Please visit Microsoft!";
+        var n = str.replace("Microsoft", "School");
+        console.log(n);
+
+        str2 = "Please visit MICROSOFT!";
+        var n2 = str2.replace(/Microsoft/i,'School');
+
+        var str3 = 'hello';
+        console.log(str3);
+
+        str4 = '3';
+        console.log(str4);
+
+    </script>
+
+</body>
+</html>
